@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite" parallel="methods" thread-count="4">
+    <test name="test">
+        
+        <!--  
+						        <groups>
+						            <run>
+						                <include name="csv" />
+						                <include name="properties" />
+						                <include name="xml" />
+						                <include name="text" />
+						                <include name="json" />
+						            </run>
+						        </groups>-->
+        <classes>
+            <class name="core.ElementsValidationTest"/>
+            <class name="core.ConfirmPageTest">
+                <methods>
+                    <include name="test_0101_1st_element_isPresent" />
+					<include name="test_0102_1st_element_Validation" />
+					<include name="test_0201_2nd_element_isPresent" />
+					<include name="test_0202_2nd_element_Validation" />
+					<include name="test_0301_3rd_element_isPresent" />
+					<include name="test_0302_3rd_element_Validation" />
+                    <include name="test_Common_inLoop_JsonFile" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

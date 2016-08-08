@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test">
+    <classes>
+      <class name="core.ConfirmPageTest"/>
+      <class name="core.ElementsValidationTest"/>
+    </classes>
+  </test> <!-- Surefire test -->
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="core.ConfirmPageTest">
+        <methods>
+          <include name="test_Common_inLoop_JsonFile"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- core.ConfirmPageTest -->
+      <class name="core.ElementsValidationTest">
+        <methods>
+          <include name="test_0301_3rd_element_isPresent"/>
+          <include name="test_0102_1st_element_Validation"/>
+          <include name="test_0201_2nd_element_isPresent"/>
+          <include name="test_0302_3rd_element_Validation"/>
+          <include name="beforeClass"/>
+          <include name="test_0202_2nd_element_Validation"/>
+          <include name="test_0101_1st_element_isPresent"/>
+        </methods>
+      </class> <!-- core.ElementsValidationTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

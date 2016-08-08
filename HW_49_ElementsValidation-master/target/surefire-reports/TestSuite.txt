@@ -1,0 +1,129 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 9, Time elapsed: 98.118 sec <<< FAILURE! - in TestSuite
+beforeClass(core.ConfirmPageTest)  Time elapsed: 50.452 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Failed to connect to binary FirefoxBinary(/Applications/Firefox.app/Contents/MacOS/firefox-bin) on port 7055; process output follows: 
+son	DEBUG	Save changes
+1470441488571	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1470441488571	addons.xpi-utils	DEBUG	Updating add-on states
+1470441488573	addons.xpi-utils	DEBUG	Writing add-ons list
+1470441488578	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/e10srollout@mozilla.org.xpi
+1470441488580	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1470441488581	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
+1470441488581	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1470441488584	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1470441488586	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1470441488649	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1470441488660	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1470441488667	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1470441488667	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1470441488668	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1470441488669	addons.manager	DEBUG	Starting provider: GMPProvider
+1470441488682	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1470441488687	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1470441488687	addons.manager	DEBUG	Starting provider: PluginProvider
+1470441488697	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1470441488698	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1470441488700	addons.manager	DEBUG	Completed startup sequence
+1470441489740	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1470441489740	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1470441489740	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1470441489942	DeferredSave.extensions.json	DEBUG	Write succeeded
+1470441489942	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1470441489942	DeferredSave.extensions.json	DEBUG	Starting timer
+1470441489968	DeferredSave.extensions.json	DEBUG	Starting write
+1470441489970	addons.repository	DEBUG	No addons.json found.
+1470441489971	DeferredSave.addons.json	DEBUG	Save changes
+1470441489973	DeferredSave.addons.json	DEBUG	Starting timer
+1470441490020	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1470441490020	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1470441490020	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1470441490027	DeferredSave.addons.json	DEBUG	Starting write
+1470441490038	DeferredSave.extensions.json	DEBUG	Write succeeded
+1470441490052	DeferredSave.addons.json	DEBUG	Write succeeded
+1470441494874	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1470441494875	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1470441494875	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+1470441495090	addons.manager	DEBUG	shutdown
+1470441495091	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1470441495091	addons.xpi	DEBUG	shutdown
+1470441495091	addons.xpi-utils	DEBUG	shutdown
+1470441495091	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1470441495093	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1470441495096	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1470441495097	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1470441495102	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1470441495118	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1470441495125	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'kamaz', ip: '10.0.26.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at core.ConfirmPageTest.beforeClass(ConfirmPageTest.java:20)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: 
+Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+son	DEBUG	Save changes
+1470441488571	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1470441488571	addons.xpi-utils	DEBUG	Updating add-on states
+1470441488573	addons.xpi-utils	DEBUG	Writing add-ons list
+1470441488578	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/e10srollout@mozilla.org.xpi
+1470441488580	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.0
+1470441488581	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/firefox@getpocket.com.xpi
+1470441488581	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.2
+1470441488584	addons.xpi	DEBUG	Registering manifest for /Applications/Firefox.app/Contents/Resources/browser/features/loop@mozilla.org.xpi
+1470441488586	addons.xpi	DEBUG	Calling bootstrap method startup on loop@mozilla.org version 1.3.2
+1470441488649	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1470441488660	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1470441488667	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1470441488667	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1470441488668	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1470441488669	addons.manager	DEBUG	Starting provider: GMPProvider
+1470441488682	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1470441488687	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1470441488687	addons.manager	DEBUG	Starting provider: PluginProvider
+1470441488697	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1470441488698	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1470441488700	addons.manager	DEBUG	Completed startup sequence
+1470441489740	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1470441489740	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1470441489740	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1470441489942	DeferredSave.extensions.json	DEBUG	Write succeeded
+1470441489942	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 17
+1470441489942	DeferredSave.extensions.json	DEBUG	Starting timer
+1470441489968	DeferredSave.extensions.json	DEBUG	Starting write
+1470441489970	addons.repository	DEBUG	No addons.json found.
+1470441489971	DeferredSave.addons.json	DEBUG	Save changes
+1470441489973	DeferredSave.addons.json	DEBUG	Starting timer
+1470441490020	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1470441490020	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1470441490020	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1470441490027	DeferredSave.addons.json	DEBUG	Starting write
+1470441490038	DeferredSave.extensions.json	DEBUG	Write succeeded
+1470441490052	DeferredSave.addons.json	DEBUG	Write succeeded
+1470441494874	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.0
+1470441494875	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.2
+1470441494875	addons.xpi	DEBUG	Calling bootstrap method shutdown on loop@mozilla.org version 1.3.2
+1470441495090	addons.manager	DEBUG	shutdown
+1470441495091	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1470441495091	addons.xpi	DEBUG	shutdown
+1470441495091	addons.xpi-utils	DEBUG	shutdown
+1470441495091	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1470441495093	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1470441495096	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1470441495097	addons.manager	DEBUG	Calling shutdown blocker for <unnamed-provider>
+1470441495102	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1470441495118	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1470441495125	addons.manager	DEBUG	Async provider shutdown done
+
+	at core.ConfirmPageTest.beforeClass(ConfirmPageTest.java:20)
+
+beforeClass(core.ElementsValidationTest)  Time elapsed: 45.96 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to bind to locking port 7054 within 45000 ms
+Build info: version: '2.50.0', revision: '1070ace4650453d518aeb03e7a9a36c9d264a8e7', time: '2016-01-27 10:46:18'
+System info: host: 'kamaz', ip: '10.0.26.194', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.11', java.version: '1.8.0_45'
+Driver info: driver.version: FirefoxDriver
+	at core.ElementsValidationTest.beforeClass(ElementsValidationTest.java:15)
+
